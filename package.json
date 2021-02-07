@@ -1,0 +1,24 @@
+{
+  "name": "boop.bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kime78/boop.bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kime78/boop.bot/issues"
+  },
+  "homepage": "https://github.com/Kime78/boop.bot#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "discord.js": "^12.5.1",
+    "request": "^2.88.2"
+  }
+}
