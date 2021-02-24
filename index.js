@@ -7,7 +7,6 @@ const cheerio = require('cheerio');
 const request = require('request');
 const bot = new Client();
 
-const token = 'ODA4MDE0MzEzMTUwMjE4Mjcx.YCAX-A.eHTIYwha3RboBsey5x5NLBjomd4';
 
 const PREFIX = '!';
 
@@ -37,17 +36,17 @@ function image(message) {
         }
     };
 
-    request(optinos, function(error, response, responseBody) {
-        if(error)
+    request(optinos, function (error, response, responseBody) {
+        if (error)
             return;
-        
+
         $ = cheerio.load(responseBody);
 
         var links = $(".image a.link");
 
         var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
 
-        if(!urls.length) {
+        if (!urls.length) {
             return;
         }
 
@@ -56,4 +55,4 @@ function image(message) {
 
 }
 
-bot.login(token);
+bot.login(process.env.DJS_KEYS);
