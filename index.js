@@ -55,4 +55,4 @@ function image(message) {
 
 }
 
-bot.login(process.env.DJS_KEYS);
+bot.login(process.env.DJS_KEY);
